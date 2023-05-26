@@ -273,6 +273,7 @@ class MainActivity3 : AppCompatActivity() {
                 if(task.isSuccessful) {
                     Toast.makeText(baseContext, "Comentário postado!", Toast.LENGTH_SHORT)
                         .show()
+                    getPosts()
                 } else {
                     Toast.makeText(baseContext, "Erro", Toast.LENGTH_SHORT)
                         .show()
@@ -289,6 +290,7 @@ class MainActivity3 : AppCompatActivity() {
                 if(task.isSuccessful) {
                     Toast.makeText(baseContext, "Curtido!", Toast.LENGTH_SHORT)
                         .show()
+                    getPosts()
                 } else {
                     Toast.makeText(baseContext, "Erro", Toast.LENGTH_SHORT)
                         .show()
